@@ -88,4 +88,55 @@ border-radius: 8px;
  0% {background-position: 0 0 ;}
   50% {background-position: 400% 0 ;} 
    100% {background-position: 0 0 ;}
-}
+    * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    text-align: center;
+    margin: 12px 0;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .table-wrap {
+    flex: 1;
+    overflow: auto; /* allows scrolling both ways */
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  table {
+    width: 100%;
+    min-width: 700px; /* wide enough for ECONOMICS */
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  th, td {
+    border: 1px solid #333;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 4px;
+    font-size: 12px;
+    white-space: nowrap; /* no breaking, no wrapping */
+  }
+  th {
+    background: #eee;
+    font-size: 11px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 55px;
+  }
+  td {
+    height: 50px;
+  }
+  /* Color classes - edit these to match your old colors */
+  .break { background: #ffd700; }
+  .lunch { background: #ffcc99; }
+
+  
